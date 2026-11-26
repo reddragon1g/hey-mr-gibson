@@ -15,10 +15,15 @@
   }
   .wrap { width: 100%; max-width: 540px; }
   h1 { font-size: 27px; margin: 0 0 6px; letter-spacing: -.3px; }
-  .sub { color: #969aa6; margin: 0 0 26px; font-size: 15px; }
+  .sub { color: #969aa6; margin: 0 0 24px; font-size: 15px; }
+  h3 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: .1em;
+    color: #787f8c; margin: 28px 0 11px;
+    border-bottom: 1px solid #262931; padding-bottom: 7px;
+  }
   .card {
     background: #1d1f26; border: 1px solid #2d3038; border-radius: 14px;
-    padding: 17px 18px 15px; margin-bottom: 15px;
+    padding: 17px 18px 15px; margin-bottom: 14px;
   }
   .card.main { border-color: #4a7dff; background: #1a2030; }
   h2 { font-size: 17px; margin: 0 0 3px; font-weight: 600; }
@@ -34,17 +39,19 @@
   .dl a.p { background: #2f5bd0; border-color: #3f6ae0; color: #fff; }
   .dl a:active { transform: translateY(1px); }
   .tip {
-    color: #7e838f; font-size: 13px; margin-top: 22px;
+    color: #7e838f; font-size: 13px; margin-top: 24px;
     border-top: 1px solid #272a32; padding-top: 16px;
   }
+  .tip strong { color: #aeb5c2; }
 </style>
 <div class="wrap">
   <h1>Hey, Mr. Gibson</h1>
-  <p class="sub">Dennis the Menace's yell, with the name swapped. Press play, or save it.</p>
+  <p class="sub">Dennis the Menace's yell, with the name swapped.</p>
 
+  <h3>The clip</h3>
   <div class="card main">
     <h2>Clean</h2>
-    <p class="note">Just the yell, background removed.</p>
+    <p class="note">Just the yell, background removed. 2.6 seconds.</p>
     <audio controls preload="metadata" src="audio/hey-mr-gibson.mp3"></audio>
     <div class="dl">
       <a class="p" href="audio/hey-mr-gibson.mp3" download>Download MP3</a>
@@ -52,30 +59,44 @@
     </div>
   </div>
 
+  <h3>Ringtones &mdash; 24 sec, custom music</h3>
+
   <div class="card">
-    <h2>With the music</h2>
-    <p class="note">Keeps the original scene &mdash; music plays, then he yells.</p>
-    <audio controls preload="metadata" src="audio/hey-mr-gibson-with-music.mp3"></audio>
+    <h2>Bounce</h2>
+    <p class="note">Marimba and plucky bass. Playful, cartoon-ish.</p>
+    <audio controls preload="metadata" src="audio/ringtone-bounce.mp3"></audio>
     <div class="dl">
-      <a class="p" href="audio/hey-mr-gibson-with-music.mp3" download>Download MP3</a>
-      <a href="audio/hey-mr-gibson-with-music.wav" download>WAV</a>
+      <a class="p" href="audio/ringtone-bounce.mp3" download>Download MP3</a>
+      <a href="audio/ringtone-bounce.wav" download>WAV</a>
     </div>
   </div>
 
   <div class="card">
-    <h2>With the music, shorter</h2>
-    <p class="note">Same, but gets to the yell quicker.</p>
-    <audio controls preload="metadata" src="audio/hey-mr-gibson-with-music-short.mp3"></audio>
+    <h2>Doorbell</h2>
+    <p class="note">Ding-dong, a beat, then the shout. The obvious joke.</p>
+    <audio controls preload="metadata" src="audio/ringtone-doorbell.mp3"></audio>
     <div class="dl">
-      <a class="p" href="audio/hey-mr-gibson-with-music-short.mp3" download>Download MP3</a>
-      <a href="audio/hey-mr-gibson-with-music-short.wav" download>WAV</a>
+      <a class="p" href="audio/ringtone-doorbell.mp3" download>Download MP3</a>
+      <a href="audio/ringtone-doorbell.wav" download>WAV</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Punchy</h2>
+    <p class="note">Drums and bass stabs. The yell is the drop.</p>
+    <audio controls preload="metadata" src="audio/ringtone-punchy.mp3"></audio>
+    <div class="dl">
+      <a class="p" href="audio/ringtone-punchy.mp3" download>Download MP3</a>
+      <a href="audio/ringtone-punchy.wav" download>WAV</a>
     </div>
   </div>
 
   <p class="tip">
-    <strong>On a phone:</strong> tap a Download button. On iPhone it lands in Files &rarr;
-    Downloads; on Android, in your Downloads folder. Long-press instead if you'd rather
-    pick where it goes.
+    <strong>Setting one as your ringtone (Samsung):</strong> tap Download MP3, then
+    Settings &rarr; Sounds and vibration &rarr; Ringtone &rarr; <strong>+</strong> and
+    pick it out of Downloads.<br><br>
+    The yell lands at 3, 11 and 19 seconds. The music is written in E&#9837; and tuned so
+    the held &ldquo;&hellip;soooon!&rdquo; sits exactly on the root note.
   </p>
 </div>
 </html>
